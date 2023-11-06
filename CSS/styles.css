@@ -1,0 +1,195 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+body{
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+}
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 60px 50px 0px;
+    overflow: hidden;
+  }
+
+#about{
+    background: linear-gradient(rgba(134, 137, 143, 0.7),  rgba(134, 137, 143, 0.7)),
+                 url(../Images/cornfield.jpg) no-repeat fixed;
+    background-size: cover;
+  }
+
+main h2, footer h1{
+    color:red;
+    text-decoration: underline;
+}
+
+#intro{
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 12%;
+    padding-right: 12%;
+    font-size:17px;
+    line-height: 23px;
+    font-weight: bold;
+}
+
+footer{
+    clear:both, cursive;
+    background-color: gray;
+}
+footer a:hover{
+    text-decoration: none;
+}
+.profile-img{
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+#copyright{
+    font-size:10px;
+}
+
+footer h1{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.contact-info{
+    margin-bottom: 0;
+    font-family: 'Mooli', sans-serif;
+}
+
+.email {
+    margin:0px;
+    padding: 1rem;
+    display: inline-block;
+}
+#number{
+    margin:0px;
+    padding: 1rem;
+    display: inline-block;
+}
+nav{
+    position:fixed;
+    background-color:tan;
+    text-align: center;
+    left: 0;
+    right:0;
+    top:0;
+}
+#display a{
+    display: inline-block;
+    color:black;
+    font-size: 110%;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+ a:hover{
+    color:blue;
+    
+}
+
+.download{
+    text-decoration: none;
+    color:white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #EF233C;
+    padding:10px;
+    display:inline-block;
+    font-size: 1em;
+    position: fixed;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+  }
+
+.end{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+.center{
+    bottom: 0;
+    flex:auto;
+    position: absolute;
+    left:50%;
+    transform: translateX(
+        -50%
+    );
+
+}
+.pdf{
+    flex: 0 0 auto;
+    margin-left: auto;
+    padding:10px;
+    
+}
+
+@media (min-width: 500px) and (max-width: 700px){
+    .download{
+            text-decoration: none;
+            color:white;
+            background-color: #EF233C;
+            padding:3px;
+            display:block;
+        }
+}
+@media (max-width: 700px){
+    .profile-img{
+        width: auto;
+        max-width: 200px;
+        height: auto;
+        max-height: 150px;
+    }
+
+    #display a{
+        display: inline-block;
+        color:black;
+        font-size: 90%;
+        font-weight: bold;
+        padding: 7px 10px;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 500px){
+    
+    .download{
+        text-decoration: none;
+        color:white; 
+        position: relative;
+        bottom: 0;
+        background-color: #EF233C;
+        padding:3px;
+    }
+    .center{        
+        position: relative;
+        bottom: 20px;
+        margin-bottom: 10px;;
+    }
+    .pdf{       
+        position: relative;
+        right: 25% ;
+        padding:5px;        
+        margin:auto;
+        width:50%;
+    }
+}
+
+  
+
+
+
+

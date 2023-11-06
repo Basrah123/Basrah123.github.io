@@ -1,0 +1,93 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+body{
+    background-color: rgb(160, 159, 159);
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+}
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 60px 50px 0px;
+    overflow: hidden;
+  }
+
+#about{
+    background: linear-gradient(rgba(134, 137, 143, 0.7),  rgba(134, 137, 143, 0.7)),
+                 url(../Images/cornfield.jpg) no-repeat fixed;
+    background-size: cover;
+  }
+  
+main h1{
+    color:red;
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+.list{
+    margin-top: 20px;
+}
+#college{
+    margin-top: 40px;
+}
+
+ul {
+    display: table;
+    margin: 0 auto;
+    text-align: left;
+    font-family: 'Caveat';
+    font-size: 20px
+  }
+
+.educate{
+    clear:both;
+    margin-top: 40px;
+}
+
+nav{
+    position:relative;
+    background-color:tan;
+    text-align: center;
+    left: 0;
+    right:0;
+    top:0;
+}
+#display a{
+    display: inline-block;
+    color:black;
+    font-size: 110%;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+a:hover{
+    color:blue;
+    
+}
+
+@media (max-width: 700px){
+    #display a{
+        display: inline-block;
+        color:black;
+        font-size: 90%;
+        font-weight: bold;
+        padding: 7px 10px;
+        text-decoration: none;
+    }
+}
+
+
+  
+
+
+
+
